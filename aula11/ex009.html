@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Brasileiro</title>
+</head>
+<body>
+    <h1>Sistema de detecção de Brasileiros!</h1>
+    Digite sua nacionalidade: <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Verificar" onclick="identificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function identificar() {
+            var nac = window.document.getElementById('txtn').value
+            var res = window.document.getElementById('res')
+            if (nac == 'Brasil' || nac == 'brasil'){
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
