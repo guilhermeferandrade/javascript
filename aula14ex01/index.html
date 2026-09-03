@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passo</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
+        <div id="dados">
             <p>Início: <input type="text" name="txtvali" id="txtvali"> </p>
             <p>Fim: <input type="number" name="txtvalf" id="txtvalf"> </p>
             <p>Passo: <input type="number" name="txtvalp" id="txtvalp"> </p>
-            <input type="button" value="Contar" onclick="contar()">
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
         <div id="res">
             Preparando a contagem...
