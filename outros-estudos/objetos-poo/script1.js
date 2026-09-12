@@ -37,6 +37,7 @@ class Produto {
             td_valor.innerText = this.arrayProdutos[i].preco; //Mostra o preço do produto
 
             td_id.classList.add('center'); //Adiciona a classe center no td_id
+            td_acoes.classList.add('center')
 
             let imgEdit = document.createElement('img'); //Cria o elemento img
             imgEdit.src = 'imagens/edit.png';
